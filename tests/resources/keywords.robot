@@ -1,22 +1,23 @@
-<<<<<<< HEAD
 *** Keywords ***
-Given o usuário acessa a página de login
-    Open Browser    https://demo.opencart.com/   chrome
+Open Demo OpenCart
+    [Arguments]    ${url}=https://demo.opencart.com/
+    Open Browser    ${url}    chrome
+    Maximize Browser Window
 
-When informa usuário "${user}" e senha "${pwd}"
-=======
-O usuário acessa a página de login
-    Open Browser    https://example.com/login    chrome
+Close Browser Session
+    Close Browser
 
-Informa usuário "${user}" e senha "${pwd}"
->>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
-    Input Text    id=username    ${user}
-    Input Text    id=password    ${pwd}
-    Click Button  id=btnLogin
+Search Product
+    [Arguments]    ${product}
+    Input Text    name=search    ${product}
+    Click Button  css=button.btn.btn-default.btn-lg
+    Wait Until Page Contains Element    css=.product-layout
 
-<<<<<<< HEAD
-Then o sistema exibe a tela inicial
-=======
-O sistema exibe a tela inicial
->>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
-    Page Should Contain Element    id=menuDashboard
+Select Product From Results
+    [Arguments]    ${product_name}
+    Click Link    ${product_name}
+    Wait Until Page Contains Element    id=button-cart
+
+Add Product To Cart
+    Click Button    id=button-cart
+    Wait Until Page Contains    Success: You have added
