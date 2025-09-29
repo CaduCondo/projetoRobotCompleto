@@ -1,120 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-29T17:54:05.392948" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-29T18:17:41.364505" rpa="false" schemaversion="5">
 <suite id="s1" name="Suites" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites">
-<suite id="s1-s1" name="Login" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites\login.robot">
-<test id="s1-s1-t1" name="Login válido" line="6">
-<kw name="Given o usuário acessa a página de login" owner="keywords">
+<suite id="s1-s1" name="addCarrinho" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites\addCarrinho.robot">
+<test id="s1-s1-t1" name="Adicionar MacBook ao carrinho" line="6">
+<kw name="Open Demo OpenCart" owner="keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-29T17:54:05.726050" level="INFO">Opening browser 'chrome' to base url 'https://demo.opencart.com/'.</msg>
-<arg>https://demo.opencart.com/</arg>
+<msg time="2025-09-29T18:17:41.695433" level="INFO">Opening browser 'chrome' to base url 'https://demo.opencart.com/'.</msg>
+<arg>${url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-29T17:54:05.725888" elapsed="1.895967"/>
+<status status="PASS" start="2025-09-29T18:17:41.695243" elapsed="1.922221"/>
 </kw>
-<status status="PASS" start="2025-09-29T17:54:05.725582" elapsed="1.896468"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-29T18:17:43.617712" elapsed="0.028610"/>
 </kw>
-<kw name="When informa usuário &quot;admin&quot; e senha &quot;1234&quot;" owner="keywords" source_name="When informa usuário &quot;${user}&quot; e senha &quot;${pwd}&quot;">
+<status status="PASS" start="2025-09-29T18:17:41.694559" elapsed="1.952063"/>
+</kw>
+<kw name="Search Product" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-29T17:54:07.623330" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
-<msg time="2025-09-29T17:54:07.778596" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-09-29T17:54:07.778815" level="FAIL">Element with locator 'id=username' not found.</msg>
-<arg>id=username</arg>
-<arg>${user}</arg>
+<msg time="2025-09-29T18:17:43.648544" level="INFO">Typing text 'MacBook' into text field 'name=search'.</msg>
+<msg time="2025-09-29T18:17:43.808187" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-29T18:17:43.808411" level="FAIL">Element with locator 'name=search' not found.</msg>
+<arg>name=search</arg>
+<arg>${product}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-09-29T17:54:07.622895" elapsed="0.158353">Element with locator 'id=username' not found.</status>
-=======
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-29T16:32:23.778335" rpa="false" schemaversion="5">
-<suite id="s1" name="Suites" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites">
-<suite id="s1-s1" name="Login" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites\login.robot">
-<test id="s1-s1-t1" name="Login válido" line="7">
-<kw name="Given o usuário acessa a página de login" owner="keywords">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-29T16:32:24.136353" level="INFO">Opening browser 'chrome' to base url 'https://example.com/login'.</msg>
-<arg>https://example.com/login</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-29T16:32:24.136170" elapsed="57.751934"/>
-</kw>
-<status status="PASS" start="2025-09-29T16:32:24.135588" elapsed="57.753006"/>
-</kw>
-<kw name="When informa usuário &quot;admin&quot; e senha &quot;1234&quot;" owner="keywords" source_name="Informa usuário &quot;${user}&quot; e senha &quot;${pwd}&quot;">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-29T16:33:21.892997" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
-<msg time="2025-09-29T16:33:22.101242" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-09-29T16:33:22.101554" level="FAIL">Element with locator 'id=username' not found.</msg>
-<arg>id=username</arg>
-<arg>${user}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-09-29T16:33:21.891547" elapsed="0.217233">Element with locator 'id=username' not found.</status>
->>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>id=password</arg>
-<arg>${pwd}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<<<<<<< HEAD
-<status status="NOT RUN" start="2025-09-29T17:54:07.781416" elapsed="0.000029"/>
-=======
-<status status="NOT RUN" start="2025-09-29T16:33:22.109297" elapsed="0.000104"/>
->>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
+<status status="FAIL" start="2025-09-29T18:17:43.647982" elapsed="0.163338">Element with locator 'name=search' not found.</status>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<arg>id=btnLogin</arg>
+<arg>css=button.btn.btn-default.btn-lg</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<<<<<<< HEAD
-<status status="NOT RUN" start="2025-09-29T17:54:07.781520" elapsed="0.000019"/>
+<status status="NOT RUN" start="2025-09-29T18:17:43.811609" elapsed="0.000058"/>
 </kw>
-<status status="FAIL" start="2025-09-29T17:54:07.622487" elapsed="0.159145">Element with locator 'id=username' not found.</status>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css=.product-layout</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-09-29T18:17:43.811777" elapsed="0.000022"/>
 </kw>
-<kw name="Then o sistema exibe a tela inicial" owner="keywords">
-<status status="NOT RUN" start="2025-09-29T17:54:07.782159" elapsed="0.000051"/>
+<arg>MacBook</arg>
+<status status="FAIL" start="2025-09-29T18:17:43.647351" elapsed="0.164576">Element with locator 'name=search' not found.</status>
 </kw>
-<status status="FAIL" start="2025-09-29T17:54:05.724390" elapsed="2.058175">Element with locator 'id=username' not found.</status>
+<kw name="Select Product From Results" owner="keywords">
+<arg>MacBook</arg>
+<status status="NOT RUN" start="2025-09-29T18:17:43.812379" elapsed="0.000074"/>
+</kw>
+<kw name="Add Product To Cart" owner="keywords">
+<status status="NOT RUN" start="2025-09-29T18:17:43.812880" elapsed="0.000038"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Success: You have added</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-09-29T18:17:43.813324" elapsed="0.000033"/>
+</kw>
+<kw name="Close Browser Session" owner="keywords">
+<status status="NOT RUN" start="2025-09-29T18:17:43.813723" elapsed="0.000033"/>
+</kw>
+<status status="FAIL" start="2025-09-29T18:17:41.693691" elapsed="2.120452">Element with locator 'name=search' not found.</status>
 </test>
-<status status="FAIL" start="2025-09-29T17:54:05.422979" elapsed="2.360650"/>
+<status status="FAIL" start="2025-09-29T18:17:41.394826" elapsed="2.420707"/>
 </suite>
-<status status="FAIL" start="2025-09-29T17:54:05.394497" elapsed="2.390232"/>
-=======
-<status status="NOT RUN" start="2025-09-29T16:33:22.109659" elapsed="0.000068"/>
+<suite id="s1-s2" name="Busca" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites\busca.robot">
+<test id="s1-s2-t1" name="Buscar Laptop" line="6">
+<kw name="Open Demo OpenCart" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-29T18:17:43.819931" level="INFO">Opening browser 'chrome' to base url 'https://demo.opencart.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-29T18:17:43.819769" elapsed="1.571277"/>
 </kw>
-<status status="FAIL" start="2025-09-29T16:33:21.889687" elapsed="0.220379">Element with locator 'id=username' not found.</status>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-29T18:17:45.391313" elapsed="0.042924"/>
 </kw>
-<kw name="Then o sistema exibe a tela inicial" owner="keywords">
-<status status="NOT RUN" start="2025-09-29T16:33:22.110780" elapsed="0.000079"/>
+<status status="PASS" start="2025-09-29T18:17:43.819478" elapsed="1.614916"/>
 </kw>
-<status status="FAIL" start="2025-09-29T16:32:24.134864" elapsed="57.976458">Element with locator 'id=username' not found.</status>
+<kw name="Search Product" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-29T18:17:45.436028" level="INFO">Typing text 'MacBook' into text field 'name=search'.</msg>
+<msg time="2025-09-29T18:17:45.736874" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-29T18:17:45.737086" level="FAIL">Element with locator 'name=search' not found.</msg>
+<arg>name=search</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-29T18:17:45.435464" elapsed="0.303221">Element with locator 'name=search' not found.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button.btn.btn-default.btn-lg</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-29T18:17:45.738968" elapsed="0.000052"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css=.product-layout</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-09-29T18:17:45.739157" elapsed="0.000036"/>
+</kw>
+<arg>MacBook</arg>
+<status status="FAIL" start="2025-09-29T18:17:45.435042" elapsed="0.304306">Element with locator 'name=search' not found.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>MacBook</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-09-29T18:17:45.739685" elapsed="0.000053"/>
+</kw>
+<kw name="Close Browser Session" owner="keywords">
+<status status="NOT RUN" start="2025-09-29T18:17:45.740003" elapsed="0.000047"/>
+</kw>
+<status status="FAIL" start="2025-09-29T18:17:43.818981" elapsed="1.921357">Element with locator 'name=search' not found.</status>
 </test>
-<status status="FAIL" start="2025-09-29T16:32:23.807110" elapsed="58.305628"/>
+<status status="FAIL" start="2025-09-29T18:17:43.816747" elapsed="1.924370"/>
 </suite>
-<status status="FAIL" start="2025-09-29T16:32:23.779974" elapsed="58.333975"/>
->>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
+<suite id="s1-s3" name="Login" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites\login.robot">
+<test id="s1-s3-t1" name="Login inválido" line="6">
+<kw name="Open Demo OpenCart" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-29T18:17:45.747641" level="INFO">Opening browser 'chrome' to base url 'https://demo.opencart.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-29T18:17:45.747329" elapsed="1.678198"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-29T18:17:47.425787" elapsed="0.028507"/>
+</kw>
+<status status="PASS" start="2025-09-29T18:17:45.746908" elapsed="1.707544"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-09-29T18:17:47.455094" level="INFO">Clicking link 'My Account'.</msg>
+<msg time="2025-09-29T18:17:47.798871" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-29T18:17:47.799102" level="FAIL">Link with locator 'My Account' not found.</msg>
+<arg>My Account</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-29T18:17:47.454757" elapsed="0.346676">Link with locator 'My Account' not found.</status>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-29T18:17:47.801982" elapsed="0.000129"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=input-email</arg>
+<arg>invalid@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-29T18:17:47.802930" elapsed="0.000059"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=input-password</arg>
+<arg>wrongpassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-29T18:17:47.803252" elapsed="0.000046"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=input.btn.btn-primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-29T18:17:47.803507" elapsed="0.000039"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Warning: No match for E-Mail Address and/or Password.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-09-29T18:17:47.803797" elapsed="0.000080"/>
+</kw>
+<kw name="Close Browser Session" owner="keywords">
+<status status="NOT RUN" start="2025-09-29T18:17:47.804198" elapsed="0.000053"/>
+</kw>
+<status status="FAIL" start="2025-09-29T18:17:45.746152" elapsed="2.058450">Link with locator 'My Account' not found.</status>
+</test>
+<status status="FAIL" start="2025-09-29T18:17:45.742273" elapsed="2.063097"/>
+</suite>
+<status status="FAIL" start="2025-09-29T18:17:41.366048" elapsed="6.440207"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
-<stat name="Login" id="s1-s1" pass="0" fail="1" skip="0">Suites.Login</stat>
+<stat name="Suites" id="s1" pass="0" fail="3" skip="0">Suites</stat>
+<stat name="addCarrinho" id="s1-s1" pass="0" fail="1" skip="0">Suites.addCarrinho</stat>
+<stat name="Busca" id="s1-s2" pass="0" fail="1" skip="0">Suites.Busca</stat>
+<stat name="Login" id="s1-s3" pass="0" fail="1" skip="0">Suites.Login</stat>
 </suite>
 </statistics>
 <errors>
-<<<<<<< HEAD
-=======
-<msg time="2025-09-29T16:32:24.132213" level="ERROR">Error in file 'C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites\login.robot' on line 3: Importing library 'GherkinLibrary' failed: ModuleNotFoundError: No module named 'GherkinLibrary'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  C:\Users\debor\venv\Scripts\robot.exe
-  C:\Users\debor\AppData\Local\Programs\Python\Python313\python313.zip
-  C:\Users\debor\AppData\Local\Programs\Python\Python313\DLLs
-  C:\Users\debor\AppData\Local\Programs\Python\Python313\Lib
-  C:\Users\debor\AppData\Local\Programs\Python\Python313
-  C:\Users\debor\venv
-  C:\Users\debor\venv\Lib\site-packages</msg>
->>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
 </errors>
 </robot>
