@@ -1,0 +1,9 @@
+{
+  "python.pythonPath": "venv/bin/python",        // Linux/Mac
+  // "python.pythonPath": "venv\\Scripts\\python.exe", // Windows
+  "robot.language-server.python": "venv/bin/python",
+  "robot.language-server.args": [
+    "--log-level", "DEBUG"
+  ],
+  "robot.python.env": "venv"
+}

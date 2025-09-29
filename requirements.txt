@@ -1,0 +1,8 @@
+robotframework
+robotframework-seleniumlibrary
+robotframework-requests
+robotframework-jsonlibrary
+robotframework-pabot
+robotframework-datadriver
+robotframework-gherkin
+git+https://github.com/robotframework/GherkinLibrary.git
