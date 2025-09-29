@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-29T17:54:05.392948" rpa="false" schemaversion="5">
 <suite id="s1" name="Suites" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites">
 <suite id="s1-s1" name="Login" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites\login.robot">
@@ -22,16 +23,46 @@
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <status status="FAIL" start="2025-09-29T17:54:07.622895" elapsed="0.158353">Element with locator 'id=username' not found.</status>
+=======
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-29T16:32:23.778335" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites">
+<suite id="s1-s1" name="Login" source="C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites\login.robot">
+<test id="s1-s1-t1" name="Login válido" line="7">
+<kw name="Given o usuário acessa a página de login" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-29T16:32:24.136353" level="INFO">Opening browser 'chrome' to base url 'https://example.com/login'.</msg>
+<arg>https://example.com/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-29T16:32:24.136170" elapsed="57.751934"/>
+</kw>
+<status status="PASS" start="2025-09-29T16:32:24.135588" elapsed="57.753006"/>
+</kw>
+<kw name="When informa usuário &quot;admin&quot; e senha &quot;1234&quot;" owner="keywords" source_name="Informa usuário &quot;${user}&quot; e senha &quot;${pwd}&quot;">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-29T16:33:21.892997" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<msg time="2025-09-29T16:33:22.101242" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-29T16:33:22.101554" level="FAIL">Element with locator 'id=username' not found.</msg>
+<arg>id=username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-29T16:33:21.891547" elapsed="0.217233">Element with locator 'id=username' not found.</status>
+>>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>id=password</arg>
 <arg>${pwd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<<<<<<< HEAD
 <status status="NOT RUN" start="2025-09-29T17:54:07.781416" elapsed="0.000029"/>
+=======
+<status status="NOT RUN" start="2025-09-29T16:33:22.109297" elapsed="0.000104"/>
+>>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
 <arg>id=btnLogin</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
+<<<<<<< HEAD
 <status status="NOT RUN" start="2025-09-29T17:54:07.781520" elapsed="0.000019"/>
 </kw>
 <status status="FAIL" start="2025-09-29T17:54:07.622487" elapsed="0.159145">Element with locator 'id=username' not found.</status>
@@ -44,6 +75,20 @@
 <status status="FAIL" start="2025-09-29T17:54:05.422979" elapsed="2.360650"/>
 </suite>
 <status status="FAIL" start="2025-09-29T17:54:05.394497" elapsed="2.390232"/>
+=======
+<status status="NOT RUN" start="2025-09-29T16:33:22.109659" elapsed="0.000068"/>
+</kw>
+<status status="FAIL" start="2025-09-29T16:33:21.889687" elapsed="0.220379">Element with locator 'id=username' not found.</status>
+</kw>
+<kw name="Then o sistema exibe a tela inicial" owner="keywords">
+<status status="NOT RUN" start="2025-09-29T16:33:22.110780" elapsed="0.000079"/>
+</kw>
+<status status="FAIL" start="2025-09-29T16:32:24.134864" elapsed="57.976458">Element with locator 'id=username' not found.</status>
+</test>
+<status status="FAIL" start="2025-09-29T16:32:23.807110" elapsed="58.305628"/>
+</suite>
+<status status="FAIL" start="2025-09-29T16:32:23.779974" elapsed="58.333975"/>
+>>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
 </suite>
 <statistics>
 <total>
@@ -57,5 +102,19 @@
 </suite>
 </statistics>
 <errors>
+<<<<<<< HEAD
+=======
+<msg time="2025-09-29T16:32:24.132213" level="ERROR">Error in file 'C:\Users\debor\Documents\automacao\primeiroProjectPython\tests\suites\login.robot' on line 3: Importing library 'GherkinLibrary' failed: ModuleNotFoundError: No module named 'GherkinLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\debor\venv\Scripts\robot.exe
+  C:\Users\debor\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\debor\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\debor\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\debor\AppData\Local\Programs\Python\Python313
+  C:\Users\debor\venv
+  C:\Users\debor\venv\Lib\site-packages</msg>
+>>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
 </errors>
 </robot>

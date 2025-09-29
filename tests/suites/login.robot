@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 *** Settings ***
 Library    SeleniumLibrary
+=======
+Library    SeleniumLibrary
+Library    GherkinLibrary
+>>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
 Resource   ../resources/keywords.robot
 
 *** Test Cases ***

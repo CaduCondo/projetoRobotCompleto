@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "python.pythonPath": "venv\\Scripts\\python.exe",
   "robot.language-server.python": "venv\\Scripts\\python.exe",
   "robot.python.env": "venv",
@@ -12,3 +13,13 @@
     "suites": "test-folder"
   }
 }
+=======
+  "python.pythonPath": "venv/bin/python",        // Linux/Mac
+  // "python.pythonPath": "venv\\Scripts\\python.exe", // Windows
+  "robot.language-server.python": "venv/bin/python",
+  "robot.language-server.args": [
+    "--log-level", "DEBUG"
+  ],
+  "robot.python.env": "venv"
+}
+>>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344

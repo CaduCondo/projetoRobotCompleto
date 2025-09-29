@@ -1,2 +1,11 @@
 robotframework
 robotframework-seleniumlibrary
+<<<<<<< HEAD
+=======
+robotframework-requests
+robotframework-jsonlibrary
+robotframework-pabot
+robotframework-datadriver
+robotframework-gherkin
+git+https://github.com/robotframework/GherkinLibrary.git
+>>>>>>> a230f5b275563e51b92cb89debdf3ccfaad33344
