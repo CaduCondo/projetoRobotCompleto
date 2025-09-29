@@ -1,0 +1,14 @@
+{
+  "python.pythonPath": "venv\\Scripts\\python.exe",
+  "robot.language-server.python": "venv\\Scripts\\python.exe",
+  "robot.python.env": "venv",
+  "material-icon-theme.files.associations": {
+    "*.robot": "test",
+    "*.resource": "settings"
+  },
+  "material-icon-theme.folders.associations": {
+    "tests": "test-folder",
+    "resources": "config",
+    "suites": "test-folder"
+  }
+}
